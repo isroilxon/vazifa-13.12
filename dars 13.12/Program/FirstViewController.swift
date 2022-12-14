@@ -14,26 +14,25 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .gray
         button.addTarget(self, action: #selector(buttonTap), for: .touchUpInside)
         
         title = "programmatic"
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "hello world"
+        label.text = "sizning shaxsiy profilingiz"
         label.font = .systemFont(ofSize: 30)
         view.addSubview(label)
         
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "rasm")
+        image.image = UIImage(named: "man")
         view.addSubview(image)
-        image.backgroundColor = .red
         image.contentMode = .scaleAspectFit
         
         button.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(button)
-        button.backgroundColor = .blue
+        button.backgroundColor = .black
         button.titleLabel?.textColor = .white
-        button.setTitle("animation", for: .normal)
+        button.setTitle("saqlanganlar", for: .normal)
         
         
     }
@@ -47,8 +46,8 @@ class FirstViewController: UIViewController {
         image.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         image.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 20).isActive = true
         
-        button.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 70).isActive = true
         button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
         
