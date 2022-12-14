@@ -17,7 +17,7 @@ class FirstViewController: UIViewController {
         view.backgroundColor = .gray
         button.addTarget(self, action: #selector(buttonTap), for: .touchUpInside)
         
-        title = "programmatic"
+//        title = "programmatic"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "sizning shaxsiy profilingiz"
         label.font = .systemFont(ofSize: 30)
